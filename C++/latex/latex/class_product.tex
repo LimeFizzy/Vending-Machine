@@ -1,0 +1,218 @@
+\doxysection{Product Class Reference}
+\hypertarget{class_product}{}\label{class_product}\index{Product@{Product}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_product_ab5d83f4f2b76d2923a49c1502a0227a0}{Product}} (string name, double price, int quantity)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_product}{Product} object. \end{DoxyCompactList}\item 
+\Hypertarget{class_product_abe0afd3bea96d979185ec2cfdf681e6f}\label{class_product_abe0afd3bea96d979185ec2cfdf681e6f} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Product} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \doxylink{class_product}{Product} object. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_product_a6d74a7c45c8cd9869d5c66b32f7250ab}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Get the Name field. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_product_ace99661630cce50335d9c8723134a873}{get\+Price}} ()
+\begin{DoxyCompactList}\small\item\em Get the Price field. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_product_a8be7132421ca6092cdf57416b1daf499}{get\+Quantity}} ()
+\begin{DoxyCompactList}\small\item\em Get the Quantity field. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_product_a25a65c689be9021e7d934d8a5c0e1283}{get\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Get products ID. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_product_a20ab40324fdb739fe73d0eefbea69241}{get\+Info}} ()
+\begin{DoxyCompactList}\small\item\em Returns string with full info about the product. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_product_aaad8f851fa998d47f35a7fd3ef192230}{set\+Price}} (double new\+Price)
+\begin{DoxyCompactList}\small\item\em Set the Price field. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_product_a67764c3c192a1ee04096381aae13393b}{set\+Quantity}} (int new\+Quantity)
+\begin{DoxyCompactList}\small\item\em Set the Quantity field. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_product_a89f20544e98106f414e1fe051d5f4ec5}{get\+Next\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Get the Next ID field. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{class_product_a1950064273442fe09360ef7094245475}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{class_product}{Product}} \&product)
+\begin{DoxyCompactList}\small\item\em \doxylink{class_product}{Product} class objects serialization. \end{DoxyCompactList}\item 
+istream \& \mbox{\hyperlink{class_product_a443a556b8c0dca3e30830be7e29678dd}{operator$>$$>$}} (istream \&is, \mbox{\hyperlink{class_product}{Product}} \&product)
+\begin{DoxyCompactList}\small\item\em \doxylink{class_product}{Product} class objects deserialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_product_ab5d83f4f2b76d2923a49c1502a0227a0}\label{class_product_ab5d83f4f2b76d2923a49c1502a0227a0} 
+\index{Product@{Product}!Product@{Product}}
+\index{Product@{Product}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{Product()}{Product()}}
+{\footnotesize\ttfamily Product\+::\+Product (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{double}]{price,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+Construct a new \doxylink{class_product}{Product} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+{\em price} & \\
+\hline
+{\em quantity} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_product_a25a65c689be9021e7d934d8a5c0e1283}\label{class_product_a25a65c689be9021e7d934d8a5c0e1283} 
+\index{Product@{Product}!getID@{getID}}
+\index{getID@{getID}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{getID()}{getID()}}
+{\footnotesize\ttfamily int Product\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get products ID. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_product_a20ab40324fdb739fe73d0eefbea69241}\label{class_product_a20ab40324fdb739fe73d0eefbea69241} 
+\index{Product@{Product}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}}
+{\footnotesize\ttfamily string Product\+::get\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns string with full info about the product. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_product_a6d74a7c45c8cd9869d5c66b32f7250ab}\label{class_product_a6d74a7c45c8cd9869d5c66b32f7250ab} 
+\index{Product@{Product}!getName@{getName}}
+\index{getName@{getName}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Product\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the Name field. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_product_a89f20544e98106f414e1fe051d5f4ec5}\label{class_product_a89f20544e98106f414e1fe051d5f4ec5} 
+\index{Product@{Product}!getNextID@{getNextID}}
+\index{getNextID@{getNextID}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{getNextID()}{getNextID()}}
+{\footnotesize\ttfamily int Product\+::get\+Next\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the Next ID field. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_product_ace99661630cce50335d9c8723134a873}\label{class_product_ace99661630cce50335d9c8723134a873} 
+\index{Product@{Product}!getPrice@{getPrice}}
+\index{getPrice@{getPrice}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{getPrice()}{getPrice()}}
+{\footnotesize\ttfamily double Product\+::get\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the Price field. 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\Hypertarget{class_product_a8be7132421ca6092cdf57416b1daf499}\label{class_product_a8be7132421ca6092cdf57416b1daf499} 
+\index{Product@{Product}!getQuantity@{getQuantity}}
+\index{getQuantity@{getQuantity}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{getQuantity()}{getQuantity()}}
+{\footnotesize\ttfamily int Product\+::get\+Quantity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the Quantity field. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_product_aaad8f851fa998d47f35a7fd3ef192230}\label{class_product_aaad8f851fa998d47f35a7fd3ef192230} 
+\index{Product@{Product}!setPrice@{setPrice}}
+\index{setPrice@{setPrice}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{setPrice()}{setPrice()}}
+{\footnotesize\ttfamily void Product\+::set\+Price (\begin{DoxyParamCaption}\item[{double}]{new\+Price }\end{DoxyParamCaption})}
+
+
+
+Set the Price field. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Price} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_product_a67764c3c192a1ee04096381aae13393b}\label{class_product_a67764c3c192a1ee04096381aae13393b} 
+\index{Product@{Product}!setQuantity@{setQuantity}}
+\index{setQuantity@{setQuantity}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{setQuantity()}{setQuantity()}}
+{\footnotesize\ttfamily void Product\+::set\+Quantity (\begin{DoxyParamCaption}\item[{int}]{new\+Quantity }\end{DoxyParamCaption})}
+
+
+
+Set the Quantity field. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Quantity} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_product_a1950064273442fe09360ef7094245475}\label{class_product_a1950064273442fe09360ef7094245475} 
+\index{Product@{Product}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_product}{Product}} \&}]{product }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxylink{class_product}{Product} class objects serialization. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & \\
+\hline
+{\em product} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ostream\& 
+\end{DoxyReturn}
+\Hypertarget{class_product_a443a556b8c0dca3e30830be7e29678dd}\label{class_product_a443a556b8c0dca3e30830be7e29678dd} 
+\index{Product@{Product}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{is,  }\item[{\mbox{\hyperlink{class_product}{Product}} \&}]{product }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxylink{class_product}{Product} class objects deserialization. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & \\
+\hline
+{\em product} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+istream\& 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_product_8h}{Product.\+h}}\item 
+\mbox{\hyperlink{_product_8cpp}{Product.\+cpp}}\end{DoxyCompactItemize}

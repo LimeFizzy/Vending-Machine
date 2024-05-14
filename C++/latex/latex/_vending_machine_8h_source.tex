@@ -1,0 +1,53 @@
+\doxysection{Vending\+Machine.\+h}
+\hypertarget{_vending_machine_8h_source}{}\label{_vending_machine_8h_source}\mbox{\hyperlink{_vending_machine_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ VENDINGMACHINE\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ VENDINGMACHINE\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{custom_param_8h}{customParam.h}}"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_interface_8h}{Interface.h}}"{}}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_product}{Product}};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_vending_machine}{VendingMachine}}\{}
+\DoxyCodeLine{00023\ \ \ \ \ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ name;}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ balance;}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ map<int,\ Product>\ products;}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ machinesCount;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_vending_type}{IVendingType}}*\ vendingType;}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_vending_machine_a3b8f7b001f069369135da6596218ded4}{VendingMachine}}(\textcolor{keywordtype}{string}\ name);}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_vending_machine_a72c4f26623cc8fcaee64d453cf81b2a6}{\string~VendingMachine}}();}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ ostream\&\ \mbox{\hyperlink{class_vending_machine_a9a1b06bba3fd5655bae9583064760033}{operator<<}}(ostream\&\ os,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_vending_machine}{VendingMachine}}\&\ vendingMachine);}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ istream\&\ \mbox{\hyperlink{class_vending_machine_a55287349c1c9d6f36d5dc84652cba921}{operator>>}}(istream\&\ is,\ \mbox{\hyperlink{class_vending_machine}{VendingMachine}}\&\ vendingMachine);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_vending_machine_a2d42b0be60f997d3e0101970e0149c6d}{getType}}();}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_vending_machine_a2f0e1fd7ed635c2cf511d1eecca63bbf}{setType}}(\mbox{\hyperlink{class_i_vending_type}{IVendingType}}*\ type);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_vending_machine_a1da27d368048736381934c11d52ea5e1}{getMachinesCount}}();}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_vending_machine_af71a54c2ba768231aa985cb103850304}{getName}}();}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_vending_machine_a4852632fe51caa659be2814aa7b9037f}{getBalance}}();}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_vending_machine_aff4a76c02ab0134998f7baad57e2da5c}{insertMoney}}(\textcolor{keywordtype}{double}\ amount);}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_vending_machine_a15f46dcf8b78eba280cb2d31cb20cd3e}{addProduct}}(\textcolor{keywordtype}{string}\ name,\ \textcolor{keywordtype}{double}\ price,\ \textcolor{keywordtype}{int}\ quantity);}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_vending_machine_aaef1244f9eebd32a4e4233385555e22a}{displayProducts}}();}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_vending_machine_a2d6c82523901e2f2d3b3295fc9733bc6}{purchaseProduct}}(\textcolor{keywordtype}{int}\ ID);}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_vending_machine_a4d75c31fda94f1cc2e2547fe8b7b712c}{setProdQuant}}(\textcolor{keywordtype}{int}\ ID,\ \textcolor{keywordtype}{int}\ newQuant);}
+\DoxyCodeLine{00130\ \};}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00132\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

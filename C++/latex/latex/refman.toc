@@ -1,0 +1,86 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Hierarchical Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Class Hierarchy}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}File Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}File List}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Class Documentation}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Coffee\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Machine Class Reference}{7}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{7}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Member Function Documentation}{7}{subsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}displayType()}{7}{subsubsection.4.1.2.1}%
+\contentsline {section}{\numberline {4.2}Custom\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Output\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stream Class Reference}{8}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{8}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}Custom\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stream\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Buffer Class Reference}{8}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{9}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.4}Display\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Error Class Reference}{9}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Detailed Description}{9}{subsection.4.4.1}%
+\contentsline {section}{\numberline {4.5}Insufficient\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Balance Class Reference}{9}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{10}{subsection.4.5.1}%
+\contentsline {section}{\numberline {4.6}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Value Class Reference}{10}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Detailed Description}{10}{subsection.4.6.1}%
+\contentsline {section}{\numberline {4.7}IVending\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Type Class Reference}{10}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Detailed Description}{11}{subsection.4.7.1}%
+\contentsline {section}{\numberline {4.8}Missing\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Product Class Reference}{11}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Detailed Description}{11}{subsection.4.8.1}%
+\contentsline {section}{\numberline {4.9}Product Class Reference}{12}{section.4.9}%
+\contentsline {subsection}{\numberline {4.9.1}Constructor \& Destructor Documentation}{12}{subsection.4.9.1}%
+\contentsline {subsubsection}{\numberline {4.9.1.1}Product()}{12}{subsubsection.4.9.1.1}%
+\contentsline {subsection}{\numberline {4.9.2}Member Function Documentation}{13}{subsection.4.9.2}%
+\contentsline {subsubsection}{\numberline {4.9.2.1}getID()}{13}{subsubsection.4.9.2.1}%
+\contentsline {subsubsection}{\numberline {4.9.2.2}getInfo()}{13}{subsubsection.4.9.2.2}%
+\contentsline {subsubsection}{\numberline {4.9.2.3}getName()}{13}{subsubsection.4.9.2.3}%
+\contentsline {subsubsection}{\numberline {4.9.2.4}getNextID()}{13}{subsubsection.4.9.2.4}%
+\contentsline {subsubsection}{\numberline {4.9.2.5}getPrice()}{13}{subsubsection.4.9.2.5}%
+\contentsline {subsubsection}{\numberline {4.9.2.6}getQuantity()}{14}{subsubsection.4.9.2.6}%
+\contentsline {subsubsection}{\numberline {4.9.2.7}setPrice()}{14}{subsubsection.4.9.2.7}%
+\contentsline {subsubsection}{\numberline {4.9.2.8}setQuantity()}{14}{subsubsection.4.9.2.8}%
+\contentsline {subsection}{\numberline {4.9.3}Friends And Related Symbol Documentation}{14}{subsection.4.9.3}%
+\contentsline {subsubsection}{\numberline {4.9.3.1}operator$<$$<$}{14}{subsubsection.4.9.3.1}%
+\contentsline {subsubsection}{\numberline {4.9.3.2}operator$>$$>$}{15}{subsubsection.4.9.3.2}%
+\contentsline {section}{\numberline {4.10}Snack\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Machine Class Reference}{15}{section.4.10}%
+\contentsline {subsection}{\numberline {4.10.1}Detailed Description}{15}{subsection.4.10.1}%
+\contentsline {subsection}{\numberline {4.10.2}Member Function Documentation}{16}{subsection.4.10.2}%
+\contentsline {subsubsection}{\numberline {4.10.2.1}displayType()}{16}{subsubsection.4.10.2.1}%
+\contentsline {section}{\numberline {4.11}Vending\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Machine Class Reference}{16}{section.4.11}%
+\contentsline {subsection}{\numberline {4.11.1}Constructor \& Destructor Documentation}{17}{subsection.4.11.1}%
+\contentsline {subsubsection}{\numberline {4.11.1.1}VendingMachine()}{17}{subsubsection.4.11.1.1}%
+\contentsline {subsection}{\numberline {4.11.2}Member Function Documentation}{17}{subsection.4.11.2}%
+\contentsline {subsubsection}{\numberline {4.11.2.1}addProduct()}{17}{subsubsection.4.11.2.1}%
+\contentsline {subsubsection}{\numberline {4.11.2.2}displayProducts()}{17}{subsubsection.4.11.2.2}%
+\contentsline {subsubsection}{\numberline {4.11.2.3}getBalance()}{18}{subsubsection.4.11.2.3}%
+\contentsline {subsubsection}{\numberline {4.11.2.4}getMachinesCount()}{18}{subsubsection.4.11.2.4}%
+\contentsline {subsubsection}{\numberline {4.11.2.5}getName()}{18}{subsubsection.4.11.2.5}%
+\contentsline {subsubsection}{\numberline {4.11.2.6}getType()}{18}{subsubsection.4.11.2.6}%
+\contentsline {subsubsection}{\numberline {4.11.2.7}insertMoney()}{18}{subsubsection.4.11.2.7}%
+\contentsline {subsubsection}{\numberline {4.11.2.8}purchaseProduct()}{19}{subsubsection.4.11.2.8}%
+\contentsline {subsubsection}{\numberline {4.11.2.9}setProdQuant()}{19}{subsubsection.4.11.2.9}%
+\contentsline {subsubsection}{\numberline {4.11.2.10}setType()}{19}{subsubsection.4.11.2.10}%
+\contentsline {subsection}{\numberline {4.11.3}Friends And Related Symbol Documentation}{19}{subsection.4.11.3}%
+\contentsline {subsubsection}{\numberline {4.11.3.1}operator$<$$<$}{19}{subsubsection.4.11.3.1}%
+\contentsline {subsubsection}{\numberline {4.11.3.2}operator$>$$>$}{20}{subsubsection.4.11.3.2}%
+\contentsline {chapter}{\numberline {5}File Documentation}{21}{chapter.5}%
+\contentsline {section}{\numberline {5.1}custom\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Param.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{21}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Detailed Description}{21}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.2}custom\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Param.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{22}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Interface.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{22}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Detailed Description}{23}{subsection.5.3.1}%
+\contentsline {section}{\numberline {5.4}Interface.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{23}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Product.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{23}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Detailed Description}{24}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Function Documentation}{24}{subsection.5.5.2}%
+\contentsline {subsubsection}{\numberline {5.5.2.1}operator$<$$<$()}{24}{subsubsection.5.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.5.2.2}operator$>$$>$()}{24}{subsubsection.5.5.2.2}%
+\contentsline {section}{\numberline {5.6}Product.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{24}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Detailed Description}{25}{subsection.5.6.1}%
+\contentsline {section}{\numberline {5.7}Product.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{25}{section.5.7}%
+\contentsline {section}{\numberline {5.8}Vending\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Machine.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{25}{section.5.8}%
+\contentsline {subsection}{\numberline {5.8.1}Detailed Description}{26}{subsection.5.8.1}%
+\contentsline {subsection}{\numberline {5.8.2}Function Documentation}{26}{subsection.5.8.2}%
+\contentsline {subsubsection}{\numberline {5.8.2.1}operator$<$$<$()}{26}{subsubsection.5.8.2.1}%
+\contentsline {subsubsection}{\numberline {5.8.2.2}operator$>$$>$()}{26}{subsubsection.5.8.2.2}%
+\contentsline {section}{\numberline {5.9}Vending\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Machine.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{26}{section.5.9}%
+\contentsline {subsection}{\numberline {5.9.1}Detailed Description}{27}{subsection.5.9.1}%
+\contentsline {section}{\numberline {5.10}Vending\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Machine.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{27}{section.5.10}%
+\contentsline {chapter}{Index}{29}{section*.32}%

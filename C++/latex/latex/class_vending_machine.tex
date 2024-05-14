@@ -1,0 +1,262 @@
+\doxysection{Vending\+Machine Class Reference}
+\hypertarget{class_vending_machine}{}\label{class_vending_machine}\index{VendingMachine@{VendingMachine}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_vending_machine_a3b8f7b001f069369135da6596218ded4}{Vending\+Machine}} (string name)
+\begin{DoxyCompactList}\small\item\em Construct a new Vending Machine object. \end{DoxyCompactList}\item 
+\Hypertarget{class_vending_machine_a72c4f26623cc8fcaee64d453cf81b2a6}\label{class_vending_machine_a72c4f26623cc8fcaee64d453cf81b2a6} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Vending\+Machine} ()
+\begin{DoxyCompactList}\small\item\em Destroy the Vending Machine object. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_vending_machine_a2d42b0be60f997d3e0101970e0149c6d}{get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Get vending machines type. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_vending_machine_a2f0e1fd7ed635c2cf511d1eecca63bbf}{set\+Type}} (\mbox{\hyperlink{class_i_vending_type}{IVending\+Type}} \texorpdfstring{$\ast$}{*}type)
+\begin{DoxyCompactList}\small\item\em Set vending machines type. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_vending_machine_af71a54c2ba768231aa985cb103850304}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Get the Name field. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_vending_machine_a4852632fe51caa659be2814aa7b9037f}{get\+Balance}} ()
+\begin{DoxyCompactList}\small\item\em Get the Balance field. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_vending_machine_aff4a76c02ab0134998f7baad57e2da5c}{insert\+Money}} (double amount)
+\begin{DoxyCompactList}\small\item\em Insert money into the vending machine, increase balance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_vending_machine_a15f46dcf8b78eba280cb2d31cb20cd3e}{add\+Product}} (string name, double price, int quantity)
+\begin{DoxyCompactList}\small\item\em Add new product to the vending machine. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_vending_machine_aaef1244f9eebd32a4e4233385555e22a}{display\+Products}} ()
+\begin{DoxyCompactList}\small\item\em Display all existing products. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_vending_machine_a2d6c82523901e2f2d3b3295fc9733bc6}{purchase\+Product}} (int ID)
+\begin{DoxyCompactList}\small\item\em Function to complete the purchase of the product. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_vending_machine_a4d75c31fda94f1cc2e2547fe8b7b712c}{set\+Prod\+Quant}} (int ID, int new\+Quant)
+\begin{DoxyCompactList}\small\item\em Set the Prod Quant field. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_vending_machine_a1da27d368048736381934c11d52ea5e1}{get\+Machines\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Get the Machines Count field. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_vending_machine_a98a74b3d9e33262c5e05c6f7be269dad}\label{class_vending_machine_a98a74b3d9e33262c5e05c6f7be269dad} 
+\mbox{\hyperlink{class_i_vending_type}{IVending\+Type}} \texorpdfstring{$\ast$}{*} {\bfseries vending\+Type}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{class_vending_machine_a9a1b06bba3fd5655bae9583064760033}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{class_vending_machine}{Vending\+Machine}} \&vending\+Machine)
+\begin{DoxyCompactList}\small\item\em Class serialization. \end{DoxyCompactList}\item 
+istream \& \mbox{\hyperlink{class_vending_machine_a55287349c1c9d6f36d5dc84652cba921}{operator$>$$>$}} (istream \&is, \mbox{\hyperlink{class_vending_machine}{Vending\+Machine}} \&vending\+Machine)
+\begin{DoxyCompactList}\small\item\em Class deserialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_vending_machine_a3b8f7b001f069369135da6596218ded4}\label{class_vending_machine_a3b8f7b001f069369135da6596218ded4} 
+\index{VendingMachine@{VendingMachine}!VendingMachine@{VendingMachine}}
+\index{VendingMachine@{VendingMachine}!VendingMachine@{VendingMachine}}
+\doxysubsubsection{\texorpdfstring{VendingMachine()}{VendingMachine()}}
+{\footnotesize\ttfamily Vending\+Machine\+::\+Vending\+Machine (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Construct a new Vending Machine object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_vending_machine_a15f46dcf8b78eba280cb2d31cb20cd3e}\label{class_vending_machine_a15f46dcf8b78eba280cb2d31cb20cd3e} 
+\index{VendingMachine@{VendingMachine}!addProduct@{addProduct}}
+\index{addProduct@{addProduct}!VendingMachine@{VendingMachine}}
+\doxysubsubsection{\texorpdfstring{addProduct()}{addProduct()}}
+{\footnotesize\ttfamily void Vending\+Machine\+::add\+Product (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{double}]{price,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+Add new product to the vending machine. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+{\em price} & \\
+\hline
+{\em quantity} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_vending_machine_aaef1244f9eebd32a4e4233385555e22a}\label{class_vending_machine_aaef1244f9eebd32a4e4233385555e22a} 
+\index{VendingMachine@{VendingMachine}!displayProducts@{displayProducts}}
+\index{displayProducts@{displayProducts}!VendingMachine@{VendingMachine}}
+\doxysubsubsection{\texorpdfstring{displayProducts()}{displayProducts()}}
+{\footnotesize\ttfamily string Vending\+Machine\+::display\+Products (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Display all existing products. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_vending_machine_a4852632fe51caa659be2814aa7b9037f}\label{class_vending_machine_a4852632fe51caa659be2814aa7b9037f} 
+\index{VendingMachine@{VendingMachine}!getBalance@{getBalance}}
+\index{getBalance@{getBalance}!VendingMachine@{VendingMachine}}
+\doxysubsubsection{\texorpdfstring{getBalance()}{getBalance()}}
+{\footnotesize\ttfamily double Vending\+Machine\+::get\+Balance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the Balance field. 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\Hypertarget{class_vending_machine_a1da27d368048736381934c11d52ea5e1}\label{class_vending_machine_a1da27d368048736381934c11d52ea5e1} 
+\index{VendingMachine@{VendingMachine}!getMachinesCount@{getMachinesCount}}
+\index{getMachinesCount@{getMachinesCount}!VendingMachine@{VendingMachine}}
+\doxysubsubsection{\texorpdfstring{getMachinesCount()}{getMachinesCount()}}
+{\footnotesize\ttfamily int Vending\+Machine\+::get\+Machines\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the Machines Count field. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_vending_machine_af71a54c2ba768231aa985cb103850304}\label{class_vending_machine_af71a54c2ba768231aa985cb103850304} 
+\index{VendingMachine@{VendingMachine}!getName@{getName}}
+\index{getName@{getName}!VendingMachine@{VendingMachine}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Vending\+Machine\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the Name field. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_vending_machine_a2d42b0be60f997d3e0101970e0149c6d}\label{class_vending_machine_a2d42b0be60f997d3e0101970e0149c6d} 
+\index{VendingMachine@{VendingMachine}!getType@{getType}}
+\index{getType@{getType}!VendingMachine@{VendingMachine}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily string Vending\+Machine\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get vending machines type. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_vending_machine_aff4a76c02ab0134998f7baad57e2da5c}\label{class_vending_machine_aff4a76c02ab0134998f7baad57e2da5c} 
+\index{VendingMachine@{VendingMachine}!insertMoney@{insertMoney}}
+\index{insertMoney@{insertMoney}!VendingMachine@{VendingMachine}}
+\doxysubsubsection{\texorpdfstring{insertMoney()}{insertMoney()}}
+{\footnotesize\ttfamily void Vending\+Machine\+::insert\+Money (\begin{DoxyParamCaption}\item[{double}]{amount }\end{DoxyParamCaption})}
+
+
+
+Insert money into the vending machine, increase balance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_vending_machine_a2d6c82523901e2f2d3b3295fc9733bc6}\label{class_vending_machine_a2d6c82523901e2f2d3b3295fc9733bc6} 
+\index{VendingMachine@{VendingMachine}!purchaseProduct@{purchaseProduct}}
+\index{purchaseProduct@{purchaseProduct}!VendingMachine@{VendingMachine}}
+\doxysubsubsection{\texorpdfstring{purchaseProduct()}{purchaseProduct()}}
+{\footnotesize\ttfamily void Vending\+Machine\+::purchase\+Product (\begin{DoxyParamCaption}\item[{int}]{ID }\end{DoxyParamCaption})}
+
+
+
+Function to complete the purchase of the product. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ID} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_vending_machine_a4d75c31fda94f1cc2e2547fe8b7b712c}\label{class_vending_machine_a4d75c31fda94f1cc2e2547fe8b7b712c} 
+\index{VendingMachine@{VendingMachine}!setProdQuant@{setProdQuant}}
+\index{setProdQuant@{setProdQuant}!VendingMachine@{VendingMachine}}
+\doxysubsubsection{\texorpdfstring{setProdQuant()}{setProdQuant()}}
+{\footnotesize\ttfamily void Vending\+Machine\+::set\+Prod\+Quant (\begin{DoxyParamCaption}\item[{int}]{ID,  }\item[{int}]{new\+Quant }\end{DoxyParamCaption})}
+
+
+
+Set the Prod Quant field. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ID} & \\
+\hline
+{\em new\+Quant} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_vending_machine_a2f0e1fd7ed635c2cf511d1eecca63bbf}\label{class_vending_machine_a2f0e1fd7ed635c2cf511d1eecca63bbf} 
+\index{VendingMachine@{VendingMachine}!setType@{setType}}
+\index{setType@{setType}!VendingMachine@{VendingMachine}}
+\doxysubsubsection{\texorpdfstring{setType()}{setType()}}
+{\footnotesize\ttfamily void Vending\+Machine\+::set\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_vending_type}{IVending\+Type}} \texorpdfstring{$\ast$}{*}}]{type }\end{DoxyParamCaption})}
+
+
+
+Set vending machines type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_vending_machine_a9a1b06bba3fd5655bae9583064760033}\label{class_vending_machine_a9a1b06bba3fd5655bae9583064760033} 
+\index{VendingMachine@{VendingMachine}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!VendingMachine@{VendingMachine}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_vending_machine}{Vending\+Machine}} \&}]{vending\+Machine }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Class serialization. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & \\
+\hline
+{\em vending\+Machine} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ostream\& 
+\end{DoxyReturn}
+\Hypertarget{class_vending_machine_a55287349c1c9d6f36d5dc84652cba921}\label{class_vending_machine_a55287349c1c9d6f36d5dc84652cba921} 
+\index{VendingMachine@{VendingMachine}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!VendingMachine@{VendingMachine}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{is,  }\item[{\mbox{\hyperlink{class_vending_machine}{Vending\+Machine}} \&}]{vending\+Machine }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Class deserialization. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & \\
+\hline
+{\em vending\+Machine} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+istream\& 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_vending_machine_8h}{Vending\+Machine.\+h}}\item 
+\mbox{\hyperlink{_vending_machine_8cpp}{Vending\+Machine.\+cpp}}\end{DoxyCompactItemize}

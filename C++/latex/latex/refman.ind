@@ -1,0 +1,126 @@
+\begin{theindex}
+
+  \item {addProduct}
+    \subitem {VendingMachine}, \hyperpage{17}
+
+  \indexspace
+
+  \item {CoffeeMachine}, \hyperpage{7}
+    \subitem {displayType}, \hyperpage{7}
+  \item {CustomOutputStream}, \hyperpage{8}
+  \item {customParam.h}, \hyperpage{21}
+  \item {CustomStreamBuffer}, \hyperpage{8}
+
+  \indexspace
+
+  \item {DisplayError}, \hyperpage{9}
+  \item {displayProducts}
+    \subitem {VendingMachine}, \hyperpage{17}
+  \item {displayType}
+    \subitem {CoffeeMachine}, \hyperpage{7}
+    \subitem {SnackMachine}, \hyperpage{16}
+
+  \indexspace
+
+  \item {getBalance}
+    \subitem {VendingMachine}, \hyperpage{17}
+  \item {getID}
+    \subitem {Product}, \hyperpage{13}
+  \item {getInfo}
+    \subitem {Product}, \hyperpage{13}
+  \item {getMachinesCount}
+    \subitem {VendingMachine}, \hyperpage{18}
+  \item {getName}
+    \subitem {Product}, \hyperpage{13}
+    \subitem {VendingMachine}, \hyperpage{18}
+  \item {getNextID}
+    \subitem {Product}, \hyperpage{13}
+  \item {getPrice}
+    \subitem {Product}, \hyperpage{13}
+  \item {getQuantity}
+    \subitem {Product}, \hyperpage{13}
+  \item {getType}
+    \subitem {VendingMachine}, \hyperpage{18}
+
+  \indexspace
+
+  \item {insertMoney}
+    \subitem {VendingMachine}, \hyperpage{18}
+  \item {InsufficientBalance}, \hyperpage{9}
+  \item {Interface.h}, \hyperpage{22}
+  \item {InvalidValue}, \hyperpage{10}
+  \item {IVendingType}, \hyperpage{10}
+
+  \indexspace
+
+  \item {MissingProduct}, \hyperpage{11}
+
+  \indexspace
+
+  \item {operator$<$$<$}
+    \subitem {Product}, \hyperpage{14}
+    \subitem {Product.cpp}, \hyperpage{24}
+    \subitem {VendingMachine}, \hyperpage{19}
+    \subitem {VendingMachine.cpp}, \hyperpage{26}
+  \item {operator$>$$>$}
+    \subitem {Product}, \hyperpage{15}
+    \subitem {Product.cpp}, \hyperpage{24}
+    \subitem {VendingMachine}, \hyperpage{20}
+    \subitem {VendingMachine.cpp}, \hyperpage{26}
+
+  \indexspace
+
+  \item {Product}, \hyperpage{12}
+    \subitem {getID}, \hyperpage{13}
+    \subitem {getInfo}, \hyperpage{13}
+    \subitem {getName}, \hyperpage{13}
+    \subitem {getNextID}, \hyperpage{13}
+    \subitem {getPrice}, \hyperpage{13}
+    \subitem {getQuantity}, \hyperpage{13}
+    \subitem {operator$<$$<$}, \hyperpage{14}
+    \subitem {operator$>$$>$}, \hyperpage{15}
+    \subitem {Product}, \hyperpage{12}
+    \subitem {setPrice}, \hyperpage{14}
+    \subitem {setQuantity}, \hyperpage{14}
+  \item {Product.cpp}, \hyperpage{23}
+    \subitem {operator$<$$<$}, \hyperpage{24}
+    \subitem {operator$>$$>$}, \hyperpage{24}
+  \item {Product.h}, \hyperpage{24}
+  \item {purchaseProduct}
+    \subitem {VendingMachine}, \hyperpage{19}
+
+  \indexspace
+
+  \item {setPrice}
+    \subitem {Product}, \hyperpage{14}
+  \item {setProdQuant}
+    \subitem {VendingMachine}, \hyperpage{19}
+  \item {setQuantity}
+    \subitem {Product}, \hyperpage{14}
+  \item {setType}
+    \subitem {VendingMachine}, \hyperpage{19}
+  \item {SnackMachine}, \hyperpage{15}
+    \subitem {displayType}, \hyperpage{16}
+
+  \indexspace
+
+  \item {VendingMachine}, \hyperpage{16}
+    \subitem {addProduct}, \hyperpage{17}
+    \subitem {displayProducts}, \hyperpage{17}
+    \subitem {getBalance}, \hyperpage{17}
+    \subitem {getMachinesCount}, \hyperpage{18}
+    \subitem {getName}, \hyperpage{18}
+    \subitem {getType}, \hyperpage{18}
+    \subitem {insertMoney}, \hyperpage{18}
+    \subitem {operator$<$$<$}, \hyperpage{19}
+    \subitem {operator$>$$>$}, \hyperpage{20}
+    \subitem {purchaseProduct}, \hyperpage{19}
+    \subitem {setProdQuant}, \hyperpage{19}
+    \subitem {setType}, \hyperpage{19}
+    \subitem {VendingMachine}, \hyperpage{17}
+  \item {VendingMachine.cpp}, \hyperpage{25}
+    \subitem {operator$<$$<$}, \hyperpage{26}
+    \subitem {operator$>$$>$}, \hyperpage{26}
+  \item {VendingMachine.h}, \hyperpage{26}
+
+\end{theindex}

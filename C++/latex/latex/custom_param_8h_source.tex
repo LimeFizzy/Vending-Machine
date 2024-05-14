@@ -1,0 +1,74 @@
+\doxysection{custom\+Param.\+h}
+\hypertarget{custom_param_8h_source}{}\label{custom_param_8h_source}\mbox{\hyperlink{custom_param_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ CUSTOMPARAM\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ CUSTOMPARAM\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <exception>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00013\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_missing_product}{MissingProduct}}\ :\ \textcolor{keyword}{public}\ exception\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ what()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept}\ \textcolor{keyword}{override}\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Exception:\ Missing\ product."{}};}
+\DoxyCodeLine{00022\ \ \ \ \ \}}
+\DoxyCodeLine{00023\ \};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_display_error}{DisplayError}}\ :\ \textcolor{keyword}{public}\ exception\ \{}
+\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ what()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept}\ \textcolor{keyword}{override}\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Exception:\ Nothing\ to\ display."{}};}
+\DoxyCodeLine{00033\ \ \ \ \ \}}
+\DoxyCodeLine{00034\ \};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00040\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_invalid_value}{InvalidValue}}\ :\ \textcolor{keyword}{public}\ exception\ \{}
+\DoxyCodeLine{00041\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ what()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept}\ \textcolor{keyword}{override}\ \{}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Exception:\ Invalid\ value\ is\ provided."{}};}
+\DoxyCodeLine{00044\ \ \ \ \ \}}
+\DoxyCodeLine{00045\ \};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00051\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_insufficient_balance}{InsufficientBalance}}\ :\ \textcolor{keyword}{public}\ exception\ \{}
+\DoxyCodeLine{00052\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ what()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept}\ \textcolor{keyword}{override}\ \{}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Exception:\ Insufficient\ balance."{}};}
+\DoxyCodeLine{00055\ \ \ \ \ \}}
+\DoxyCodeLine{00056\ \};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00062\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_custom_stream_buffer}{CustomStreamBuffer}}\ :\ \textcolor{keyword}{public}\ streambuf\ \{}
+\DoxyCodeLine{00063\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00064\ \ \ \ \ \mbox{\hyperlink{class_custom_stream_buffer}{CustomStreamBuffer}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ filename)\ :\ file(filename)\ \{\}}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keyword}{virtual}\ streamsize\ xsputn(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ s,\ streamsize\ n)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Write\ to\ the\ file}}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ file.write(s,\ n);}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ file.flush();\ \textcolor{comment}{//\ Flush\ the\ file\ stream}}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Write\ to\ the\ standard\ output}}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ cout.rdbuf()-\/>sputn(s,\ n);}
+\DoxyCodeLine{00072\ \ \ \ \ \}}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ overflow(\textcolor{keywordtype}{int}\ c)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Write\ to\ the\ file}}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ file.put(c);}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ file.flush();\ \textcolor{comment}{//\ Flush\ the\ file\ stream}}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Write\ to\ the\ standard\ output}}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ cout.rdbuf()-\/>sputc(c);}
+\DoxyCodeLine{00080\ \ \ \ \ \}}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00083\ \ \ \ \ ofstream\ file;}
+\DoxyCodeLine{00084\ \};}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00090\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_custom_output_stream}{CustomOutputStream}}\ :\ \textcolor{keyword}{public}\ ostream\ \{}
+\DoxyCodeLine{00091\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00092\ \ \ \ \ \mbox{\hyperlink{class_custom_output_stream}{CustomOutputStream}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ filename)\ :\ ostream(\&buffer),\ buffer(filename)\ \{\}}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00095\ \ \ \ \ \mbox{\hyperlink{class_custom_stream_buffer}{CustomStreamBuffer}}\ buffer;}
+\DoxyCodeLine{00096\ \};}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
